@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0.5px solid black;
+}
+
+body {
+  background-color: #6666;
+}
+.container {
+  max-width: 50%;
+  background-color: black;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 1px floralwhite;
+}
+
+.col-1 {
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px floralwhite;
+}
+
+.red {
+  background-color: #ff3213;
+}
+
+.orange {
+  background-color: #ff971c;
+}
+
+.yellow {
+  background-color: #ffd500;
+}
+
+.blue {
+  background-color: #0341ae;
+}
+
+.green {
+  background-color: #72cb3b;
+}
