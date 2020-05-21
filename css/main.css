@@ -1,4 +1,4 @@
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -32,4 +32,59 @@
 .col-6 .container [class*="col-"] {
   border: 0.5px solid white;
   background-color: red;
+} */
+
+/* Position Absolute */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+.container {
+  background-color: pink;
+  text-align: center;
+}
+
+[class*="col-"] {
+  border: 0.1px solid black;
+  height: 100%;
+  position: relative;
+}
+
+.container:first-of-type>.col-1 {
+  height: 100px;
+  line-height: 40px;
+}
+
+.container:nth-of-type(2),
+.container:nth-of-type(3),
+.container:nth-of-type(4),
+.container:nth-of-type(5) {
+  height: 200px;
+}
+
+.container:nth-of-type(2) [class*="col-"] span,
+.container:nth-of-type(3) [class*="col-"] span,
+.container:nth-of-type(4) [class*="col-"] span,
+.container:nth-of-type(5) [class*="col-"] span,
+.container:nth-of-type(5) .col-6 .container span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container:nth-of-type(5) .col-6 {
+  padding: 1%;
+}
+
+.container:nth-of-type(5) .col-6 .container {
+  height: 100%;
+}
+
+.col-6 .container [class*="col-"] {
+  border: 0.5px solid white;
+  background-color: red;
+} 
