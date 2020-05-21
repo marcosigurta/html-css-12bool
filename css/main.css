@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: pink;
+  text-align: center;
+}
+
+[class*="col-"] {
+  border: 0.1px solid black;
+}
+
+.container:first-of-type>.col-1 {
+  height: 100px;
+}
+
+.container:nth-of-type(2),
+.container:nth-of-type(3),
+.container:nth-of-type(4),
+.container:nth-of-type(5) {
+  line-height: 200px;
+}
+
+.container:nth-of-type(5) .col-6 {
+  padding: 1%;
+}
+
+.col-6 .container [class*="col-"] {
+  border: 0.5px solid white;
+  background-color: red;
+}
